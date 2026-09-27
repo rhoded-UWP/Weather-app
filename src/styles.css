@@ -1,0 +1,42 @@
+/* Base styles for the Weather App. Plain CSS only (see CLAUDE.md). */
+
+:root {
+  --bg: #eef4fa;
+  --surface: #ffffff;
+  --ink: #1b2733;
+  --ink-soft: #4a5a6a;
+  --accent: #1a64b7;
+  --focus: #f58113;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.starter {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: var(--surface);
+  border-radius: 12px;
+}
+
+.sample-badge {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  background: #fff4e5;
+  color: #7a3e00;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
